@@ -362,7 +362,7 @@
 </li>
 <li><p><strong>复制SSH KEY到Github</strong><br>到目录下找到.ssh文件夹，查看里面是否有id_rsa和id_rsa.pub这两个文件。<br>登录GitHub系统，点击账号的Settings；<br><img src="/img/hexo/gitsettings.png" alt="avater"><br>点击“SSH and GPG keys” –&gt; “New SSH key”<br><img src="/img/hexo/gitssh.png" alt="avater"><br>填入id_rsa.pub文件中的内容<br><img src="/img/hexo/sshaddkey.png" alt="avater"></p>
 </li>
-<li><p><strong>配置账户</strong><br>$ git config –global user.name “your_username”  #设置用户名<br>$ git config –global user.email “your_registered_github_Email”</p>
+<li><p><strong>配置账户</strong><br>$ git config --global user.name “your_username”  #设置用户名<br>$ git config --global user.email “your_registered_github_Email”</p>
 </li>
 <li><p><strong>测试SSH KEY是否设置成功</strong><br>$ ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br>接下来会返回一些信息，并需要你输入一次yes，若生成ssh key时设置有密码则还会让你输入生成ssh key时设置的密码。<br>Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access. #出现词句话，说明设置成功。</p>
 </li>
